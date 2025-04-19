@@ -1,4 +1,4 @@
-package com.lazaro.backend.week1day1;
+package com.lazaro.backend.week1.day1oop;
 
 public class Cat extends Animal implements Pet{
 

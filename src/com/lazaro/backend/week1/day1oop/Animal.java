@@ -1,4 +1,4 @@
-package com.lazaro.backend.week1day1;
+package com.lazaro.backend.week1.day1oop;
 
 public class Animal {
 	//A private modifier allows to access just from the same class.

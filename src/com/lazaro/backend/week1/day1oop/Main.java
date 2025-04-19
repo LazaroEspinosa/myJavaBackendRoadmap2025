@@ -1,4 +1,4 @@
-package com.lazaro.backend.week1day1;
+package com.lazaro.backend.week1.day1oop;
 
 import java.util.ArrayList;
 
@@ -22,7 +22,7 @@ public class Main {
 
 		for(Animal animal:animalList) {
 			animal.makeSound();
-			if(animal instanceof Pet) {
+			if(animal instanceof Pet) {//instance of
 				((Pet)animal).play();
 			}
 		}
