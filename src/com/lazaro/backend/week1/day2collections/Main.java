@@ -52,10 +52,10 @@ public class Main {
 		
 		HashSet<Integer> codigosUnicos = new HashSet<>();
 		/*
-		 * add(elemento): Agrega un elemento.
-		 * remove(elemento): Elimina un elemento.
-		 * contains(elemento): Verifica si el elemento existe.
-		 * size(): Retorna el número de elementos.
+		 * add(object): add an object.
+		 * remove(object): delete an object.
+		 * contains(object): Verify if the object exist.
+		 * size(): Return the number of elements
 		 */
 		for(int i =0;i<10;i++) {
 			codigosUnicos.add((int)(Math.random()*99999));
