@@ -1,6 +1,6 @@
-# Semana 1 - Día 1: Fundamentos de POO
+# Semana 1
 
-## 📘 Conceptos clave y notas recopiladas
+## Conceptos clave y notas recopiladas
 
 ### 🔹 `super` vs `this`
 - `super`: Accede a la **clase padre** (superclase). Útil para llamar al constructor o métodos de la clase padre.
@@ -71,7 +71,7 @@ System.out.println(p instanceof Gato);    // false
 
 ---
 
-## 🎯 Pilares de la POO aplicados
+## Pilares de la POO aplicados
 
 ### **1. Abstracción**
 > Enfocarse en lo importante, ocultando detalles innecesarios.
@@ -139,3 +139,52 @@ public class Animal {
 ```
 
 ---
+
+## Hierarchy of Exceptions
+
+### Throwable:
+
+-Exception (Exceptions could be controlled)
+	-IOException, SQLException, etc.
+-Error (Serious problems that should not catch)
+	-OutOfMemoryError, StackOverflowError, etc.
+	
+### Checked and Unchecked Exceptions:
+-Checked: The compiler force to catch and declare the exceptions with throws.
+	-Example: IOException, SQLException.
+-Unchecked: Derive from RuntimeException. It is not forced to catch.
+	-Example: NullPointerException, ArithmeticException.
+	
+### throw vs throws:
+
+-You use the throw keyword to throw an exception explicitly. This keyword is used inside a method.
+
+```
+public void verificarEdad(int edad) {
+    if (edad < 18) {
+        throw new IllegalArgumentException("Debe ser mayor de edad.");
+    }
+}
+```
+
+-You can use the throws keyword to declare that a METHOD might throw an exception. The Throws keyword is used in the method signature.
+
+```
+public void leerArchivo(String nombreArchivo) throws IOException {
+    // Código que puede lanzar IOException
+}
+```
+
+### Catch multiple Exceptions:
+
+```
+try {
+    // code that could throws multiple exceptions
+} catch (IOException | SQLException e) {
+    // Common management to handle IOException y SQLException
+}
+```
+
+	
+
+
